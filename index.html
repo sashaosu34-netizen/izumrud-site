@@ -18,7 +18,6 @@
 
       <nav class="nav" id="nav" aria-label="Основная навигация">
         <a href="#services">Услуги</a>
-        <a href="#prices">Прайс</a>
         <a href="#about">О салоне</a>
         <a href="#reviews">Отзывы</a>
         <a href="#contacts">Контакты</a>
@@ -43,7 +42,6 @@
           <p class="hero__lead">Салон «Изумрудный» — пространство ухода за собой: волосы, ногти, брови и ресницы, массаж, косметология и солярий в одном месте.</p>
           <div class="hero__actions">
             <a class="button" href="https://wa.me/79154901010?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B9%C2%BB." target="_blank" rel="noopener">Записаться в WhatsApp <span>↗</span></a>
-            <a class="button button--ghost" href="#prices">Смотреть прайс</a>
           </div>
           <div class="hero__facts">
             <div><strong>5,0</strong><span>рейтинг<br>на Яндекс Картах</span></div>
@@ -90,70 +88,17 @@
         </div>
 
         <div class="services-grid">
-          <article class="service-card service-card--large reveal">
+          <article class="service-card service-card--large reveal" data-service-price="hair" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="servicePriceDrawer" aria-label="Открыть прайс на волосы">
             <span class="service-card__index">01</span>
             <div class="service-card__icon">✂</div>
-            <div><small>HAIR</small><h3>Волосы</h3><p>Женские и мужские стрижки, укладки, окрашивание, уходы, кератин и восстановление волос.</p></div>
+            <div><small>HAIR</small><h3>Волосы</h3><p>Женские и мужские стрижки, укладки, окрашивание, уходы, кератин и восстановление волос.</p><span class="service-card__action">Смотреть прайс <b>↗</b></span></div>
           </article>
-          <article class="service-card reveal"><span class="service-card__index">02</span><div class="service-card__icon">◌</div><div><small>NAILS</small><h3>Ногти</h3><p>Маникюр, педикюр, гель-лак, наращивание и уход за руками и стопами.</p></div></article>
-          <article class="service-card reveal"><span class="service-card__index">03</span><div class="service-card__icon">⌁</div><div><small>BROWS</small><h3>Брови и ресницы</h3><p>Коррекция, окрашивание и ламинирование.</p></div></article>
-          <article class="service-card reveal"><span class="service-card__index">04</span><div class="service-card__icon">≈</div><div><small>MASSAGE</small><h3>Массаж</h3><p>Оздоровительный, расслабляющий, лимфодренажный и антицеллюлитный массаж.</p></div></article>
-          <article class="service-card reveal"><span class="service-card__index">05</span><div class="service-card__icon">✧</div><div><small>CARE</small><h3>Косметология</h3><p>Уход за лицом, чистки, пилинги и другие косметологические процедуры.</p></div></article>
-          <article class="service-card reveal"><span class="service-card__index">06</span><div class="service-card__icon">☼</div><div><small>TAN</small><h3>Солярий</h3><p>Вертикальный солярий и услуги загара.</p></div></article>
+          <article class="service-card reveal" data-service-price="nails" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="servicePriceDrawer" aria-label="Открыть прайс на ногти"><span class="service-card__index">02</span><div class="service-card__icon">◌</div><div><small>NAILS</small><h3>Ногти</h3><p>Маникюр, педикюр, гель-лак, наращивание и уход за руками и стопами.</p><span class="service-card__action">Смотреть прайс <b>↗</b></span></div></article>
+          <article class="service-card reveal" data-service-price="brows" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="servicePriceDrawer" aria-label="Открыть прайс на брови и ресницы"><span class="service-card__index">03</span><div class="service-card__icon">⌁</div><div><small>BROWS</small><h3>Брови и ресницы</h3><p>Коррекция, окрашивание и ламинирование.</p><span class="service-card__action">Смотреть прайс <b>↗</b></span></div></article>
+          <article class="service-card reveal" data-service-price="massage" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="servicePriceDrawer" aria-label="Открыть прайс на массаж"><span class="service-card__index">04</span><div class="service-card__icon">≈</div><div><small>MASSAGE</small><h3>Массаж</h3><p>Оздоровительный, расслабляющий, лимфодренажный и антицеллюлитный массаж.</p><span class="service-card__action">Смотреть прайс <b>↗</b></span></div></article>
+          <article class="service-card reveal" data-service-price="cosmetology" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="servicePriceDrawer" aria-label="Открыть прайс на косметологию"><span class="service-card__index">05</span><div class="service-card__icon">✧</div><div><small>CARE</small><h3>Косметология</h3><p>Уход за лицом, чистки, пилинги и другие косметологические процедуры.</p><span class="service-card__action">Смотреть прайс <b>↗</b></span></div></article>
+          <article class="service-card reveal" data-service-price="tan" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="servicePriceDrawer" aria-label="Открыть прайс на солярий"><span class="service-card__index">06</span><div class="service-card__icon">☼</div><div><small>TAN</small><h3>Солярий</h3><p>Вертикальный солярий и услуги загара.</p><span class="service-card__action">Смотреть прайс <b>↗</b></span></div></article>
         </div>
-      </div>
-    </section>
-
-    <section class="section section--dark" id="prices">
-      <div class="container">
-        <div class="section-heading section-heading--light reveal">
-          <p class="eyebrow">Прайс</p>
-          <h2>Понятные цены<br><span>на популярные услуги.</span></h2>
-          <p>Ниже — позиции из актуального прайса карточки салона. Точная стоимость сложных процедур зависит от длины волос, объёма работы и выбранной услуги.</p>
-        </div>
-
-        <div class="price-tabs" role="tablist" aria-label="Категории прайса">
-          <button class="price-tab active" data-price-tab="hair" type="button">Волосы</button>
-          <button class="price-tab" data-price-tab="men" type="button">Мужской зал</button>
-          <button class="price-tab" data-price-tab="nails" type="button">Ногти / брови</button>
-          <button class="price-tab" data-price-tab="care" type="button">Уход</button>
-        </div>
-
-        <div class="price-panel active" data-price-panel="hair">
-          <div class="price-row"><div><strong>Стрижка модельная, короткие</strong><span>мытьё и сушка оплачиваются отдельно</span></div><b>900–1 500 ₽</b></div>
-          <div class="price-row"><div><strong>Стрижка, средняя длина</strong><span>с укладкой</span></div><b>1 000–1 700 ₽</b></div>
-          <div class="price-row"><div><strong>Стрижка, длинные волосы</strong><span>с укладкой</span></div><b>1 100–1 800 ₽</b></div>
-          <div class="price-row"><div><strong>Стрижка чёлки</strong><span>быстрая коррекция формы</span></div><b>500 ₽</b></div>
-          <div class="price-row"><div><strong>Вечерняя укладка «Леди»</strong><span>собранная вечерняя причёска</span></div><b>1 500–4 500 ₽</b></div>
-          <div class="price-row"><div><strong>Протеиновое восстановление</strong><span>уход для повреждённых волос</span></div><b>2 000–3 000 ₽</b></div>
-        </div>
-
-        <div class="price-panel" data-price-panel="men">
-          <div class="price-row"><div><strong>Стрижка машинкой</strong><span>под 2 насадки</span></div><b>600 ₽</b></div>
-          <div class="price-row"><div><strong>Стрижка усов</strong><span>оформление длины</span></div><b>200 ₽</b></div>
-          <div class="price-row"><div><strong>Моделирование бороды</strong><span>форма и аккуратная окантовка</span></div><b>600 ₽</b></div>
-          <div class="price-row"><div><strong>Оформление бороды</strong><span>форма + окантовка</span></div><b>600 ₽</b></div>
-          <div class="price-row"><div><strong>Мужской комплекс</strong><span>стрижка + борода + мытьё + уход</span></div><b>от 2 000 ₽</b></div>
-        </div>
-
-        <div class="price-panel" data-price-panel="nails">
-          <div class="price-row"><div><strong>Маникюр комбинированный</strong><span>аппарат + кусачки</span></div><b>1 200 ₽</b></div>
-          <div class="price-row"><div><strong>Коррекция бровей по форме</strong><span>оформление формы</span></div><b>750 ₽</b></div>
-          <div class="price-row"><div><strong>Окрашивание бровей</strong><span>подбор оттенка</span></div><b>700 ₽</b></div>
-          <div class="price-row"><div><strong>Солярий</strong><span>стоимость за минуту</span></div><b>от 20 ₽</b></div>
-        </div>
-
-        <div class="price-panel" data-price-panel="care">
-          <div class="price-row"><div><strong>Маска-уход Veiden Series, короткие</strong><span>коллагеновая маска + серум</span></div><b>1 000 ₽</b></div>
-          <div class="price-row"><div><strong>Маска-уход Veiden Series, средние</strong><span>увлажнение волос</span></div><b>1 300 ₽</b></div>
-          <div class="price-row"><div><strong>Маска-уход Veiden Series, длинные</strong><span>увлажнение волос</span></div><b>1 800 ₽</b></div>
-          <div class="price-row"><div><strong>Total Reconstruction, короткие</strong><span>восстанавливающая реконструкция</span></div><b>2 500 ₽</b></div>
-          <div class="price-row"><div><strong>Total Reconstruction, средние</strong><span>восстанавливающая реконструкция</span></div><b>3 000 ₽</b></div>
-          <div class="price-row"><div><strong>Total Reconstruction, длинные</strong><span>восстанавливающая реконструкция</span></div><b>3 500 ₽</b></div>
-        </div>
-
-        <div class="price-note">Цены носят информационный характер и не являются публичной офертой. Перед записью рекомендуем уточнить актуальную стоимость.</div>
-        <div class="price-cta"><a class="button button--light" href="https://wa.me/79154901010?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D1%82%D1%8C%20%D1%86%D0%B5%D0%BD%D1%83%20%D0%B8%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">Уточнить стоимость в WhatsApp</a></div>
       </div>
     </section>
 
@@ -230,6 +175,24 @@
   </footer>
 
   <a class="floating-whatsapp" href="https://wa.me/79154901010?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WA</a>
+
+  <div class="price-drawer" id="servicePriceDrawer" aria-hidden="true">
+    <div class="price-drawer__backdrop" data-price-drawer-close></div>
+    <aside class="price-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="servicePriceTitle" aria-describedby="servicePriceDescription">
+      <button class="price-drawer__close" type="button" data-price-drawer-close aria-label="Закрыть прайс">×</button>
+      <div class="price-drawer__header">
+        <span class="price-drawer__eyebrow" id="servicePriceEyebrow">ПРАЙС</span>
+        <h2 id="servicePriceTitle">Услуги</h2>
+        <p id="servicePriceDescription">Выберите направление, чтобы посмотреть цены.</p>
+      </div>
+      <div class="price-drawer__content" id="servicePriceContent"></div>
+      <div class="price-drawer__footer">
+        <p>Цены указаны за стандартный объём работы. Для сложных процедур итоговая стоимость может отличаться.</p>
+        <a class="button price-drawer__cta" id="servicePriceWhatsapp" href="https://wa.me/79154901010" target="_blank" rel="noopener">Записаться в WhatsApp <span>↗</span></a>
+      </div>
+    </aside>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
